@@ -1,0 +1,391 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Garamond, serif;
+}
+
+.title{
+	position: fixed;
+    top: 5%;
+    left:20%;
+    transform: translate(-50%, -50%);
+	font-size:20px;
+	font-weight:bold;
+}
+    .head {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('content/header.jpeg');
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 790px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+	.head p {
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    float: left;
+    margin-left: 20px;
+    }
+	.head p:hover{
+	color:lightblue;
+	}
+	.head p span{
+	margin-right: 20px;
+	}
+    .head h1 {
+	position:relative;
+      font-size: 65px;
+      text-align: center;
+      color: white;
+      transition: transform 0.3s ease;
+	  font-weight: bold;
+	  letter-spacing: 3px;
+	 
+    }
+
+	.head h2 {
+	position:relative;
+      font-size: 35px;
+      text-align: center;
+      color: white;
+      transition: transform 0.3s ease;
+	  font-weight: bold;
+    }
+	
+    .head h1:hover , .head h2:hover {
+      transform: scale(1.1);
+	  color:white;
+    }
+
+
+.navbar a{
+	 text-decoration: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+}
+
+
+.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+	  color:white;
+      padding: 20px;
+      transition: background-color 0.3s ease;
+      z-index: 999;
+    }
+.navbar .logo{
+	float:left;
+	position: fixed;
+	 width: 50px; /* Adjust the width as needed */
+	 height: 50px;
+}
+
+ul{
+	float:right;
+	list-style-type:none;
+	margin-top:10px;
+	min-height:10px;
+	margin-right:40px;
+	font-size:0.5px;
+	
+}
+
+ul li{
+	display:inline;
+	padding:15px;
+}
+
+ul li a:hover{
+background-color: white;
+color:rgb(70, 130, 180);
+padding:10px;}
+
+.button {
+  color: white;
+  border: 1px solid white;
+  padding:10px;
+}
+
+.button:hover {
+  background-color: grey;
+  color: white;
+}
+.button1{
+	background-color:rgb(70, 130, 180);
+	color:white;
+	padding:10px;
+	margin:2px;
+	border:1px dotted green;
+	width:120px;
+	margin-left:46%;
+
+}
+.button1:hover{
+	background-color:lightblue;
+	color:black;
+}
+.about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 2px solid #eeeeee;
+	  padding:30px;
+	  background-color:	rgb(245,245,245);
+}
+.about-me p{
+	font-size:20px;
+	text-align:justify;
+	 padding: 30px 60px;
+}
+.about-me img {
+      width: 500px;
+      max-width: 80%;
+      height: auto;
+	  padding:10px;
+      border-radius: 10px;
+	  transition: all 0.3s; /* Add a smooth transition effect */
+}
+.about-me:hover img{
+      filter: none; /* Remove the grayscale effect on hover */
+      transform: scale(1.1); /* Apply a scale effect on hover */
+      position: relative;
+      z-index: 1; /* Bring the image to the front */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a box shadow for a pop-up effect */
+    }
+.about-me-text h2 , .story h2 , .services h2 , .contact h2{
+      font-size: 33px;
+      color: rgb(70, 130, 180);
+      text-transform: uppercase;
+      margin: 0;
+	  font-weight:bold;
+	   padding:20px;
+	   text-align:center;
+}
+
+
+.team h2{
+	font-size: 33px;
+      color: rgb(70, 130, 180);
+      text-transform: uppercase;
+      margin: 0;
+	  font-weight:bold;
+	  padding:20px;
+	  text-align:center;
+	 
+}
+ .container1{
+	  background-color:black;
+	    padding: 0 2px;
+		width: 100%;
+		display:inline-flex;
+		
+  }
+    .container {
+      position: relative;
+      display: inline-block;
+      margin-top: 30px;
+	  margin-bottom: 30px;
+	    padding: 0 15px;
+		
+    }
+	.container1 h5{
+	font-size:14px;
+	}
+
+    .image {
+      display: block;
+      height:230px;
+	width:220px;
+	   border-radius: 50%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 102%;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s ease;
+	   border-radius: 100%;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .text {
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+.container2 p{
+font-weight:bold;
+font-size:24px;
+text-align:center;
+}
+.container2:hover{
+	background-color:lightgrey;
+}
+
+    .container3{
+     position: relative;
+      width: 100%;
+      height: 50%;
+      padding: 20%; /* Set the aspect ratio of the image (e.g., 16:9) */
+	  
+    }
+	.container3 .text-overlay:hover{
+		 border: grey solid 4px;
+	}
+    .container3 img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+	  filter:brightness(50%);
+	  animation: slideIn 1s ease-in-out;
+    }
+
+    .container3 .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 22px;
+      text-align: center;
+	  background-color:	black;
+	  color:white;
+	  text-align:justify;
+      width: 70%;
+	  padding:15px;
+	  font-family: Garamond, serif;
+    }
+	
+.container4{
+	display:inline-flex;
+	padding:20px;
+	    
+}
+  .container6 {
+      display: flex;
+	  background-image:url("content/services.avif");
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 150vh;
+	background-size:cover;
+	background-repeat:no-repeat;
+	  
+    }
+
+    .card1 {
+      flex: 0 0 calc(33.33% - 20px);
+      width: 300px;
+      height: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      position: relative;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+	  margin:11px;
+    }
+
+    .card1 i {
+      font-size: 80px;
+      color: lightblue;
+    }
+
+    .card1 h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card1 p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+	.card1:hover{
+		 border: lightblue solid 4px;
+	}
+.circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: white;
+      text-align: center;
+	  border: 3px solid black;
+	  margin-bottom:0px;
+	  margin-top:0px;
+	  margin-right:400px
+	
+    }
+ .nav-link {
+      color: white;
+    }
+	 .active-link {
+      background-color: white;
+	  color:rgb(70, 130, 180);
+      padding:10px;
+    }	
+/* Animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeAnimation 1s ease-in-out forwards;
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px); /* Initial position, adjust as needed */
+  transition: opacity 0.15s ease-out, transform 0.5s ease-out;
+}
+.fade-up.fade-up-show {
+  opacity: 1;
+  transform: translateY(0);
+} 
+
+@keyframes fadeAnimation {
+      from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes pop-up {
+      0% { transform: scale(0.8) perspective(1000px) rotateY(-90deg); opacity: 0; }
+      100% { transform: scale(1) perspective(1000px) rotateY(0); opacity: 1; }
+    }
+	
+ @keyframes slideIn {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
